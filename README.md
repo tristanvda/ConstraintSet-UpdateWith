@@ -1,11 +1,11 @@
 # ConstraintSet-UpdateWith
 This test project features a few extension methods for kotlin to add some flexibility to the ConstraintSets.
 Consider a situation where you have a base layout and you want the ability to switch (and animate) between multiple states.
-Each state has only a few views that are visible, but sometimes features different views than the other states. This will require 3 xml files that have all the views, which can result in 3 big and confusing files.
+Each state has only a few views that are visible, but sometimes features different views than the other states. This will require multiple xml files that have all the views, which can result in big and confusing files.
 To solve this, the 'updateWith(set: ConstraintSet)' extension method let's you have one default ConstraintSet and update it with a new ConstraintSet, that only contains the views that have changed.
 
 ## example
-We start off with one base layout that contains all the views. This state has all the views set to 'gone', except for the button:
+We start off with one base layout that contains all the views. This (default) state has all the views set to 'gone', except for the button:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
