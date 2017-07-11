@@ -108,8 +108,8 @@ The second state will only show the EditText (at the top), together with the che
 
 </android.support.constraint.ConstraintLayout>
 ```
-Finally to create the constraintSets, the base set is created first. 
-To create the first and second state, the base is copied and updated with the delta ConstraintSets. Like so: 
+Finally, to create the constraintSets, the base set is created first. 
+Now, to create the first and second state, the base is copied and updated with the 'delta' ConstraintSets. Like so: 
 
 ```Kotlin
 constraintLayout = findViewById(R.id.parent) as ConstraintLayout
@@ -123,9 +123,9 @@ constraintLayout = findViewById(R.id.parent) as ConstraintLayout
         constraintSet2 = originalConstraintSet.copy().apply { updateWith(this@MainActivity, R.layout.main_state_2) }
  ```
  
-Now, when pressing the button, we simply rotate between originalConstraintSet, constraintSet1 and constraintSet2 to get this result:
+When pressing the button, we simply rotate between originalConstraintSet, constraintSet1 and constraintSet2 to get this result:
 
-<img src="https://raw.githubusercontent.com/tristanvda/ConstraintSet-UpdateWith/master/resources/demo.gif" width="360" height="640">
+<img src="https://raw.githubusercontent.com/tristanvda/ConstraintSet-UpdateWith/master/resources/demo.gif">
 
 ## References
 https://developer.android.com/reference/android/support/constraint/ConstraintSet.html
