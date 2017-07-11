@@ -112,7 +112,7 @@ Finally, to create the constraintSets, the base set is created first.
 Now, to create the first and second state, the base is copied and updated with the 'delta' ConstraintSets. Like so: 
 
 ```Kotlin
-constraintLayout = findViewById(R.id.parent) as ConstraintLayout
+        constraintLayout = findViewById(R.id.parent) as ConstraintLayout
 
         //Create an original ConstraintSet that has the default state
         originalConstraintSet = ConstraintSet()
